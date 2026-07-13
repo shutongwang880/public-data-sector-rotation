@@ -1,0 +1,27 @@
+.venv/
+__pycache__/
+*.py[cod]
+.DS_Store
+*.egg-info/
+dist/
+build/
+.ipynb_checkpoints/
+.matplotlib/
+
+# Raw market data (fetched via run_phase1.py)
+data/raw/*.csv
+!data/raw/.gitkeep
+
+# Generated ML outputs (produced by run_ml.py)
+data/processed/**
+!data/processed/.gitkeep
+
+# Generated figures (produced by run_phase1.py / run_ml.py)
+data/figures/**
+!data/figures/.gitkeep
+
+# Generated Word report (regenerate with generate_word.py)
+docs/REPORT.docx
+docs/~$*
+
+*.log
